@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="84.547326">
+    <testcase classname="Validation of Ind Digi Agri Jewel Loan" name="Authentication Stage" time="84.547326">
+        <system-out><![CDATA[Given User have to launch the URL...........................................passed
+When User have to enter valid CIF/SB Accountnumber..........................passed
+And User have to click validate button......................................passed
+And User have to click sendotp button.......................................passed
+And User have to enter valid OTP............................................passed
+And User have to click submitotp button.....................................passed
+And User should navigate to customerdetails page............................passed
+And User should check the purpose of loan is always agri and non editable...passed
+And User should enter valid email address and click generate otp and enter valid otp and click submit otp button.passed
+And User should select Religion-caste.......................................passed
+And User  should click radio button of permananent address and user should check permananent address and temporary address are same.passed
+And User should add nominee details.........................................passed
+And User should enter next button...........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

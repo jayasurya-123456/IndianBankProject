@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-13T09:33:33.112Z",
+        "line": 2,
+        "name": "Authentication Stage",
+        "description": "",
+        "id": "validation-of-ind-digi-agri-jewel-loan;authentication-stage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12867548300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User have to launch the URL",
+            "match": {
+              "location": "StepdefinitionClass.user_have_to_launch_the_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 215923300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User have to enter valid CIF/SB Accountnumber",
+            "match": {
+              "location": "StepdefinitionClass.user_have_to_enter_valid_CIF_SB_Accountnumber()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2595494100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User have to click validate button",
+            "match": {
+              "location": "StepdefinitionClass.user_have_to_click_validate_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20976959200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User have to click sendotp button",
+            "match": {
+              "location": "StepdefinitionClass.user_have_to_click_sendotp_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44815800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User have to enter valid OTP",
+            "match": {
+              "location": "StepdefinitionClass.user_have_to_enter_valid_OTP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5665697900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User have to click submitotp button",
+            "match": {
+              "location": "StepdefinitionClass.user_have_to_click_submitotp_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6055199,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should navigate to customerdetails page",
+            "match": {
+              "location": "StepdefinitionClass.user_should_navigate_to_customerdetails_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1151177800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should check the purpose of loan is always agri and non editable",
+            "match": {
+              "location": "StepdefinitionClass.user_should_check_the_purpose_of_loan_is_always_agri_and_non_editable()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28829718000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should enter valid email address and click generate otp and enter valid otp and click submit otp button",
+            "match": {
+              "location": "StepdefinitionClass.user_should_enter_valid_email_address_and_click_generate_otp_and_enter_valid_otp_and_click_submit_otp_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 914730600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should select Religion-caste",
+            "match": {
+              "location": "StepdefinitionClass.user_should_select_Religion_caste()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5285458800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User  should click radio button of permananent address and user should check permananent address and temporary address are same",
+            "match": {
+              "location": "StepdefinitionClass.user_should_click_radio_button_of_permananent_address_and_user_should_check_permananent_address_and_temporary_address_are_same()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4927872300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should add nominee details",
+            "match": {
+              "location": "StepdefinitionClass.user_should_add_nominee_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1014270100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should enter next button",
+            "match": {
+              "location": "StepdefinitionClass.user_should_enter_next_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Ind Digi Agri Jewel Loan",
+    "description": "",
+    "id": "validation-of-ind-digi-agri-jewel-loan",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/authentication.feature",
+    "tags": []
+  }
+]
