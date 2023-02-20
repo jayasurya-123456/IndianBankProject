@@ -21,7 +21,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -32,11 +34,13 @@ public class BaseClass {
 	public static Alert x;
 	public static JavascriptExecutor js;
 	public static Select s;
+	//1
 	public static void launchChrome() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 	}
+	
 	//2
 	public static void maximize() {
 		driver.manage().window().maximize();
@@ -280,6 +284,14 @@ public class BaseClass {
 	}
 	public static void defaultcontent() {
 		driver.switchTo().defaultContent();
+	}
+
+	//Explicit Wait(elementToBeClickable)
+	
+	public static void elementToBeClickable(WebElement web,int sec) {
+		WebDriverWait wait = new WebDriverWait(driver, sec);
+		wait.until(ExpectedConditions.elementToBeClickable(web));
+		
 	}
 	public static void datePicker(String month,String year,String day) {
 		

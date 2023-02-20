@@ -13,4 +13,18 @@ And User should select Religion-caste
 And User  should click radio button of permananent address and user should check permananent address and temporary address are same
 And User should add nominee details
 And User should enter next button
+And User should navigate to activity details
+And User have to fill the loan amount and gross weight
+And User have to fill the crop details and agri allied deatils
+And User have to enter the Value in Loan Amount Repaid to Non-Institutional Lender  and if enter more than amount user have to check the alert is coming
+And User should navigate to branch selection page
+And User have to select branch
+And User have to select appoinmentdate
+And User should navigate to preview page
+And User have to check all the textboxes having values or not
+And User have to click next button
+And User should navigate to branch verification page
+
+
+
  
