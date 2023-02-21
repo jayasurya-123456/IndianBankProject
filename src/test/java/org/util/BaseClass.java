@@ -4,11 +4,17 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
 import org.codehaus.plexus.util.FileUtils;
@@ -22,6 +28,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -108,6 +115,22 @@ public class BaseClass {
 		a.contextClick(e).perform();
 
 	}
+	 //Mouse Over (clickAndHold)
+	
+	public static void clickAndHold(WebElement web) {
+		
+		a.clickAndHold(web).build().perform();
+		
+		
+	}	
+	//Mouse Over (release	)
+	
+	public static void release(WebElement web) {
+		
+		a.release(web).build().perform();
+		
+		
+	}
 	//15
 	public static void dragAndDrop(WebElement src,WebElement des) {
 		a.dragAndDrop(src, des).perform();
@@ -130,6 +153,15 @@ public class BaseClass {
 		r.keyRelease(KeyEvent.VK_TAB);
 
 	}
+	//Robot Class(shift button)
+	
+	public static void shiftButton() throws AWTException {
+		Robot rt=new Robot();
+		rt.keyPress(KeyEvent.VK_SHIFT);
+		rt.keyRelease(KeyEvent.VK_SHIFT);
+		
+	}
+	
 	//19
 	public static void robotCopy() {
 		r.keyPress(KeyEvent.VK_CONTROL);
@@ -155,6 +187,14 @@ public class BaseClass {
 		r.keyPress(KeyEvent.VK_DOWN);
 		r.keyRelease(KeyEvent.VK_DOWN);
 
+	}
+	//Robot Class(alt button)
+	
+	public static void altButton() throws AWTException {
+		Robot rt=new Robot();
+		rt.keyPress(KeyEvent.VK_ALT);
+		rt.keyRelease(KeyEvent.VK_ALT);
+		
 	}
 	//23
 	public static  void alertAccept() {
@@ -317,5 +357,85 @@ public class BaseClass {
 		
 
 	}
+	//Fluent Wait
+	public static void fluentWait(int sec, int sec1, WebElement exp) {
+		FluentWait<WebDriver> f =new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(sec)).pollingEvery(Duration.ofSeconds(sec1)).ignoring(Exception.class);
+		        f.until(ExpectedConditions.elementToBeClickable(exp));
+		
+		
+	}
+	//Explicit Wait(frameToBeAvailableAndsSwitchToIt)
+	
+	public static void frameToBeAvailableAndsSwitchToIt(WebElement web,int sec) {
+		WebDriverWait wait = new WebDriverWait(driver, sec);
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(web));
+		
+	}
+	//Explicit Wait(numberOfWindowsToBe)
+	
+	public static void numberOfWindowsToBe(int no,int sec) {
+		WebDriverWait wait = new WebDriverWait(driver, sec);
+		wait.until(ExpectedConditions.numberOfWindowsToBe(no));
+		
+	}
+	
+  //Explicit Wait(elementToBeSelected)
+	
+	public static void elementToBeSelected(WebElement web,int sec) {
+		WebDriverWait wait = new WebDriverWait(driver, sec);
+		wait.until(ExpectedConditions.elementToBeSelected(web));
+		
+	}
+	 //Explicit Wait(visibilityOfElementLocated)
+	
+	public static void visibilityOfElementLocated(WebElement web,int sec) {
+		WebDriverWait wait = new WebDriverWait(driver, sec);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(null));
+		
+	}
+	
+//Explicit Wait(alertIsPresent)
+	
+	public static void alertIsPresent(int sec) {
+		WebDriverWait wait = new WebDriverWait(driver, sec);
+		wait.until(ExpectedConditions.alertIsPresent());
+		
+	}
+	public static void writeProperty(String filename,String key,String value) {
+        File f = new File(filename);
+        try {
+            FileInputStream fin = new FileInputStream(f);
+            FileOutputStream fo = new FileOutputStream(f);
+            Properties p = new Properties();
+            p.load(fin);
+            p.setProperty(key,value);
+            p.store(fo,"write a value");
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
+        
+       
+        }
+	 public static void writeValueUsingReader(String filename,String key,String value) {
+            File f = new File(filename);
+            try {
+                FileReader read = new FileReader(f);
+                FileWriter write = new FileWriter(f);
+                Properties p = new Properties();
+                p.load(read);
+                p.setProperty(key, value);
+                p.store(write, "write a value");
+            } catch (Exception e) {
+
+                e.printStackTrace();
+            }
+
+ 
+
+    }
+	
+	
 
 }

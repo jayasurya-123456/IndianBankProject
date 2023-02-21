@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-02-17T11:09:02.924Z",
+        "start_timestamp": "2023-02-20T11:51:26.580Z",
         "line": 2,
         "name": "Authentication Stage",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12441290500,
+              "duration": 15306955500,
               "status": "passed"
             },
             "line": 3,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 222020500,
+              "duration": 151692200,
               "status": "passed"
             },
             "line": 4,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 469841600,
+              "duration": 5249100000,
               "status": "passed"
             },
             "line": 5,
@@ -49,9 +49,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d110.0.5481.104)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LPT2881\u0027, ip: \u0027192.168.24.90\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.3\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\\Program Files (x86)\\scop...}, goog:chromeOptions: {debuggerAddress: localhost:60634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3545673af72611ab09cfeed61fa68bd6\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat org.stepdefinition.StepdefinitionClass.user_have_to_click_sendotp_button(StepdefinitionClass.java:54)\r\n\tat ✽.User have to click sendotp button(file:src/test/resources/Feature/authentication.feature:6)\r\n",
-              "duration": 10751614400,
-              "status": "failed"
+              "duration": 20596904500,
+              "status": "passed"
             },
             "line": 6,
             "name": "User have to click sendotp button",
@@ -62,8 +61,8 @@
           },
           {
             "result": {
-              "duration": 629700,
-              "status": "skipped"
+              "duration": 42523600,
+              "status": "passed"
             },
             "line": 7,
             "name": "User have to enter valid OTP",
@@ -74,8 +73,8 @@
           },
           {
             "result": {
-              "duration": 499000,
-              "status": "skipped"
+              "duration": 14815879700,
+              "status": "passed"
             },
             "line": 8,
             "name": "User have to click submitotp button",
@@ -86,8 +85,8 @@
           },
           {
             "result": {
-              "duration": 338300,
-              "status": "skipped"
+              "duration": 6065900,
+              "status": "passed"
             },
             "line": 9,
             "name": "User should navigate to customerdetails page",
@@ -98,8 +97,8 @@
           },
           {
             "result": {
-              "duration": 435900,
-              "status": "skipped"
+              "duration": 814970700,
+              "status": "passed"
             },
             "line": 10,
             "name": "User should check the purpose of loan is always agri and non editable",
@@ -110,8 +109,8 @@
           },
           {
             "result": {
-              "duration": 317000,
-              "status": "skipped"
+              "duration": 38054543600,
+              "status": "passed"
             },
             "line": 11,
             "name": "User should enter valid email address and click generate otp and enter valid otp and click submit otp button",
@@ -122,8 +121,8 @@
           },
           {
             "result": {
-              "duration": 340500,
-              "status": "skipped"
+              "duration": 190781600,
+              "status": "passed"
             },
             "line": 12,
             "name": "User should select Religion-caste",
@@ -134,8 +133,8 @@
           },
           {
             "result": {
-              "duration": 214200,
-              "status": "skipped"
+              "duration": 10260731200,
+              "status": "passed"
             },
             "line": 13,
             "name": "User  should click radio button of permananent address and user should check permananent address and temporary address are same",
@@ -146,8 +145,8 @@
           },
           {
             "result": {
-              "duration": 359500,
-              "status": "skipped"
+              "duration": 4686542800,
+              "status": "passed"
             },
             "line": 14,
             "name": "User should add nominee details",
@@ -158,8 +157,8 @@
           },
           {
             "result": {
-              "duration": 331400,
-              "status": "skipped"
+              "duration": 834702300,
+              "status": "passed"
             },
             "line": 15,
             "name": "User should enter next button",
@@ -170,8 +169,8 @@
           },
           {
             "result": {
-              "duration": 299400,
-              "status": "skipped"
+              "duration": 6344400,
+              "status": "passed"
             },
             "line": 16,
             "name": "User should navigate to activity details",
@@ -182,8 +181,8 @@
           },
           {
             "result": {
-              "duration": 271800,
-              "status": "skipped"
+              "duration": 6193526700,
+              "status": "passed"
             },
             "line": 17,
             "name": "User have to fill the loan amount and gross weight",
@@ -194,8 +193,8 @@
           },
           {
             "result": {
-              "duration": 312000,
-              "status": "skipped"
+              "duration": 22206619300,
+              "status": "passed"
             },
             "line": 18,
             "name": "User have to fill the crop details and agri allied deatils",
@@ -206,8 +205,8 @@
           },
           {
             "result": {
-              "duration": 386100,
-              "status": "skipped"
+              "duration": 5754080400,
+              "status": "passed"
             },
             "line": 19,
             "name": "User have to enter the Value in Loan Amount Repaid to Non-Institutional Lender  and if enter more than amount user have to check the alert is coming",
@@ -218,8 +217,8 @@
           },
           {
             "result": {
-              "duration": 439100,
-              "status": "skipped"
+              "duration": 11185300,
+              "status": "passed"
             },
             "line": 20,
             "name": "User should navigate to branch selection page",
@@ -230,8 +229,8 @@
           },
           {
             "result": {
-              "duration": 436700,
-              "status": "skipped"
+              "duration": 14646384200,
+              "status": "passed"
             },
             "line": 21,
             "name": "User have to select branch",
@@ -242,8 +241,8 @@
           },
           {
             "result": {
-              "duration": 294200,
-              "status": "skipped"
+              "duration": 10434207400,
+              "status": "passed"
             },
             "line": 22,
             "name": "User have to select appoinmentdate",
@@ -254,8 +253,8 @@
           },
           {
             "result": {
-              "duration": 194700,
-              "status": "skipped"
+              "duration": 5493800,
+              "status": "passed"
             },
             "line": 23,
             "name": "User should navigate to preview page",
@@ -266,8 +265,8 @@
           },
           {
             "result": {
-              "duration": 399700,
-              "status": "skipped"
+              "duration": 2088004400,
+              "status": "passed"
             },
             "line": 24,
             "name": "User have to check all the textboxes having values or not",
@@ -278,8 +277,8 @@
           },
           {
             "result": {
-              "duration": 373700,
-              "status": "skipped"
+              "duration": 3030532400,
+              "status": "passed"
             },
             "line": 25,
             "name": "User have to click next button",
@@ -290,8 +289,8 @@
           },
           {
             "result": {
-              "duration": 220400,
-              "status": "skipped"
+              "duration": 762300,
+              "status": "passed"
             },
             "line": 26,
             "name": "User should navigate to branch verification page",

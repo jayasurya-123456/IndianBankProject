@@ -108,7 +108,7 @@ System.out.println("The purpose of loan:Not Agri");
 		
 	    if (email.isEnabled()) {
 	    	System.out.println("email is enabled");
-	    	//if (text.isEmpty()) {
+	    //	if (text.isEmpty()) {
 	    		System.out.println("email  value is not there  and editable");
 		    	email.sendKeys("suryamoorthy2907@gmail.com");
 		    	//robotEnter();
@@ -118,8 +118,8 @@ System.out.println("The purpose of loan:Not Agri");
 		    	driver.findElement(By.id("KCC_PDS_SubmitOTP")).click();
 				
 			//} else {
-System.out.println("testcase fail");
-		//	}
+//System.out.println("testcase fail");
+		//}
 	    
 	    	}
 			
@@ -147,18 +147,18 @@ System.out.println("email values is default enabled but non editable");
 	    
 		WebElement radiobutten = driver.findElement(By.xpath("//input[@id='LP_LOS_PERSONAL_DETS_JEWELET_SAMEASPERADDR']//parent::div"));
 		radiobutten.click();
-		Thread.sleep(2000);
-		//if (radiobutten.isSelected()) {
-			//System.out.println("Both permanent and temporary address are same and non editable");
-			  
-		//} else {
-		//	driver.findElement(By.id("LP_LOS_PERSONAL_DETS_JEWELET_CA_PINCODE")).sendKeys("626111");
-		 ////     robotEnter();
-		  //  driver.findElement(By.id("LP_LOS_PERSONAL_DETS_JEWELET_CA")).sendKeys("No 2/28 WATER TANK STREET MANGUDI SANKARANKOIL STREET");
-		
-			
-		//}
-	    
+		Thread.sleep(10000);
+//		if (radiobutten.isSelected()) {
+//			System.out.println("Both permanent and temporary address are same and non editable");
+//			  
+//		} else {
+//			driver.findElement(By.id("LP_LOS_PERSONAL_DETS_JEWELET_CA_PINCODE")).sendKeys("626111");
+//		      robotEnter();
+//		   driver.findElement(By.id("LP_LOS_PERSONAL_DETS_JEWELET_CA")).sendKeys("No 2/28 WATER TANK STREET MANGUDI SANKARANKOIL STREET");
+//		
+//			
+//		}
+//    
 		
 	}
 
@@ -242,7 +242,7 @@ System.out.println("Value should be there  in field \"Amount can be availed ₹
 	    s.selectByVisibleText("CHENNAI");
 	    WebElement value7 = driver.findElement(By.xpath("(//select[@datatype='combobox'])[8]"));
 	    s= new Select(value7);
-	    s.selectByVisibleText("Alandur");
+	    s.selectByVisibleText("Adambakkam");
 	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[8]")).sendKeys("1");
 	    WebElement value8 = driver.findElement(By.xpath("(//select[@datatype='combobox'])[9]"));
 	    s= new Select(value8);
@@ -252,17 +252,47 @@ System.out.println("Value should be there  in field \"Amount can be availed ₹
 	    WebElement value9= driver.findElement(By.xpath("(//select[@datatype='combobox'])[10]"));
 	    s= new Select(value9);
 	    s.selectByVisibleText("Lease");
-	   // driver.findElement(By.xpath("//input[@id='Credit_Assessment_GL_table4_0']//parent::div")).click();
-	    WebElement value10 = driver.findElement(By.xpath("(//select[@class='control-class form-control inputStyle  '])[11]"));
+	    driver.findElement(By.id("add_TBL_CREDIT_ASSESSMENT")).click();
+	    WebElement value10 = driver.findElement(By.xpath("(//select[@datatype='combobox'])[11]"));
 	    s= new Select(value10);
+	    s.selectByVisibleText("TAMIL NADU");
+	    WebElement value11 = driver.findElement(By.xpath("(//select[@datatype='combobox'])[12]"));
+	    s= new Select(value11);
+	    s.selectByVisibleText("CHENNAI");
+	    WebElement value12 = driver.findElement(By.xpath("(//select[@datatype='combobox'])[13]"));
+	    s= new Select(value12);
+	    s.selectByVisibleText("Alandur");
+	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[12]")).sendKeys("1");
+	    WebElement value13 = driver.findElement(By.xpath("(//select[@datatype='combobox'])[14]"));
+	    s= new Select(value13);
+	    s.selectByVisibleText("Cashew");
+	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[13]")).sendKeys("2");
+	    WebElement value14= driver.findElement(By.xpath("(//select[@datatype='combobox'])[15]"));
+	    s= new Select(value14);
+	    s.selectByVisibleText("Lease");
+	    driver.findElement(By.id("add_TBL_CREDIT_ASSESSMENT")).click();
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("(//button[text()='OK'])[2]")).click();
+	    
+	   // driver.findElement(By.xpath("//input[@id='Credit_Assessment_GL_table4_0']//parent::div")).click();
+	    WebElement value15 = driver.findElement(By.xpath("(//select[@class='control-class form-control inputStyle  '])[16]"));
+	    s= new Select(value15);
 	    s.selectByVisibleText("Fishery");
-	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[13]")).sendKeys("1");
+	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[17]")).sendKeys("1");
 	    driver.findElement(By.id("add_Credit_Assessment_GL_table4")).click();
 	   // driver.findElement(By.xpath("//input[@id='Credit_Assessment_GL_table4_1']//parent::div")).click();
-	    WebElement value11 = driver.findElement(By.xpath("(//select[@class='control-class form-control inputStyle  '])[12]"));
-	    s= new Select(value11);
+	    WebElement value16 = driver.findElement(By.xpath("(//select[@class='control-class form-control inputStyle  '])[17]"));
+	    s= new Select(value16);
 	    s.selectByVisibleText("Dairy/Cattle");
-	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[16]")).sendKeys("1");
+	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[20]")).sendKeys("1");
+	    driver.findElement(By.id("add_Credit_Assessment_GL_table4")).click();
+	    WebElement value17 = driver.findElement(By.xpath("(//select[@class='control-class form-control inputStyle  '])[18]"));
+	    s= new Select(value17);
+	    s.selectByVisibleText("Piggery");
+	    driver.findElement(By.xpath("(//input[@typeofvalue='Text'])[23]")).sendKeys("1");
+	    driver.findElement(By.id("add_Credit_Assessment_GL_table4")).click();
+	    Thread.sleep(2000);
+driver.findElement(By.xpath("(//button[text()='OK'])[2]")).click();
 	   
 	    
 	    

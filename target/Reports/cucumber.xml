@@ -1,54 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="23.950688">
-    <testcase classname="Validation of Ind Digi Agri Jewel Loan" name="Authentication Stage" time="23.950688">
-        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=110.0.5481.104)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LPT2881', ip: '192.168.24.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:60634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3545673af72611ab09cfeed61fa68bd6&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at org.stepdefinition.StepdefinitionClass.user_have_to_click_sendotp_button(StepdefinitionClass.java:54)&#13;&#10;&#9;at ✽.User have to click sendotp button(file:src/test/resources/Feature/authentication.feature:6)&#13;&#10;"><![CDATA[Given User have to launch the URL...........................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="175.449107">
+    <testcase classname="Validation of Ind Digi Agri Jewel Loan" name="Authentication Stage" time="175.449107">
+        <system-out><![CDATA[Given User have to launch the URL...........................................passed
 When User have to enter valid CIF/SB Accountnumber..........................passed
 And User have to click validate button......................................passed
-And User have to click sendotp button.......................................failed
-And User have to enter valid OTP............................................skipped
-And User have to click submitotp button.....................................skipped
-And User should navigate to customerdetails page............................skipped
-And User should check the purpose of loan is always agri and non editable...skipped
-And User should enter valid email address and click generate otp and enter valid otp and click submit otp button.skipped
-And User should select Religion-caste.......................................skipped
-And User  should click radio button of permananent address and user should check permananent address and temporary address are same.skipped
-And User should add nominee details.........................................skipped
-And User should enter next button...........................................skipped
-And User should navigate to activity details................................skipped
-And User have to fill the loan amount and gross weight......................skipped
-And User have to fill the crop details and agri allied deatils..............skipped
-And User have to enter the Value in Loan Amount Repaid to Non-Institutional Lender  and if enter more than amount user have to check the alert is coming.skipped
-And User should navigate to branch selection page...........................skipped
-And User have to select branch..............................................skipped
-And User have to select appoinmentdate......................................skipped
-And User should navigate to preview page....................................skipped
-And User have to check all the textboxes having values or not...............skipped
-And User have to click next button..........................................skipped
-And User should navigate to branch verification page........................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=110.0.5481.104)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT2881', ip: '192.168.24.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:60634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3545673af72611ab09cfeed61fa68bd6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.stepdefinition.StepdefinitionClass.user_have_to_click_sendotp_button(StepdefinitionClass.java:54)
-	at ✽.User have to click sendotp button(file:src/test/resources/Feature/authentication.feature:6)
-]]></failure>
+And User have to click sendotp button.......................................passed
+And User have to enter valid OTP............................................passed
+And User have to click submitotp button.....................................passed
+And User should navigate to customerdetails page............................passed
+And User should check the purpose of loan is always agri and non editable...passed
+And User should enter valid email address and click generate otp and enter valid otp and click submit otp button.passed
+And User should select Religion-caste.......................................passed
+And User  should click radio button of permananent address and user should check permananent address and temporary address are same.passed
+And User should add nominee details.........................................passed
+And User should enter next button...........................................passed
+And User should navigate to activity details................................passed
+And User have to fill the loan amount and gross weight......................passed
+And User have to fill the crop details and agri allied deatils..............passed
+And User have to enter the Value in Loan Amount Repaid to Non-Institutional Lender  and if enter more than amount user have to check the alert is coming.passed
+And User should navigate to branch selection page...........................passed
+And User have to select branch..............................................passed
+And User have to select appoinmentdate......................................passed
+And User should navigate to preview page....................................passed
+And User have to check all the textboxes having values or not...............passed
+And User have to click next button..........................................passed
+And User should navigate to branch verification page........................passed
+]]></system-out>
     </testcase>
 </testsuite>
